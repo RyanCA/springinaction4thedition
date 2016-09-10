@@ -1,0 +1,17 @@
+Add Hibernate Form Validation jar, then appeared this problem.
+
+Solution:
+Change the file dependency 
+from 
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>4.0.2.GA</version>
+		</dependency>
+
+To
+		<dependency>
+		    <groupId>org.hibernate</groupId>
+		    <artifactId>hibernate-validator</artifactId>
+		    <version>4.3.1.Final</version>
+		</dependency>

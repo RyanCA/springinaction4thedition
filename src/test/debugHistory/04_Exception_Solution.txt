@@ -1,0 +1,5 @@
+
+
+Message source files must be put under folder src/main/resources rather than src/main/java
+
+If you put resource files under src/main/java. Those resource files won't be picked up and put into war file.

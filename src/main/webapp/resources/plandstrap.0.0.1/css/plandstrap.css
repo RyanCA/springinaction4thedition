@@ -1,0 +1,14 @@
+/* element selector */
+label.error {
+  color: red;
+}
+input.error {
+  background-color: #ffcccc;
+}
+
+/* class selector */
+.error{
+	color:blue
+}
+
+/*id selector eg: #para1{color:red}*/

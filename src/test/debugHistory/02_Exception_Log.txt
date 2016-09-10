@@ -1,0 +1,174 @@
+C:\_SoftwareDev\eclipse_projects\springaction4thedition>mvn clean package
+[INFO] Scanning for projects...
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building spittr 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ spittr ---
+[INFO] Deleting C:\_SoftwareDev\eclipse_projects\springaction4thedition\target
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ spittr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\_SoftwareDev\eclipse_projects\springaction4thedition\src\main\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ spittr ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 11 source files to C:\_SoftwareDev\eclipse_projects\springaction4thedition\target\classes
+[INFO]
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ spittr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\_SoftwareDev\eclipse_projects\springaction4thedition\src\test\resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ spittr ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to C:\_SoftwareDev\eclipse_projects\springaction4thedition\target\test-classes
+[INFO]
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ spittr ---
+[INFO] Surefire report directory: C:\_SoftwareDev\eclipse_projects\springaction4thedition\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running pland.com.springaction4thedition.web.HomeControllerTest
+九月 02, 2016 10:48:52 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.HomeController.home()
+九月 02, 2016 10:48:52 下午 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+信息: Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@3bbb81f0
+九月 02, 2016 10:48:52 下午 org.springframework.mock.web.MockServletContext log
+信息: Initializing Spring FrameworkServlet ''
+九月 02, 2016 10:48:52 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization started
+九月 02, 2016 10:48:52 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization completed in 4 ms
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.793 sec
+Running pland.com.springaction4thedition.web.SpitterControllerTest
+九月 02, 2016 10:48:52 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spitter/{username}],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.SpitterController.showSpitterProfile(java.lang.String,org.springframework.ui.Model)
+九月 02, 2016 10:48:52 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spitter/register],methods=[POST]}" onto public java.lang.String pland.com.springaction4thedition.web.SpitterController.processRegistrationForm(pland.com.springaction4thedition.data.Spitter)
+九月 02, 2016 10:48:52 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spitter/register],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.SpitterController.showRegistrationForm()
+九月 02, 2016 10:48:52 下午 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+信息: Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@55dbe543
+九月 02, 2016 10:48:52 下午 org.springframework.mock.web.MockServletContext log
+信息: Initializing Spring FrameworkServlet ''
+九月 02, 2016 10:48:52 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization started
+九月 02, 2016 10:48:52 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization completed in 0 ms
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spitter/{username}],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.SpitterController.showSpitterProfile(java.lang.String,org.springframework.ui.Model)
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spitter/register],methods=[POST]}" onto public java.lang.String pland.com.springaction4thedition.web.SpitterController.processRegistrationForm(pland.com.springaction4thedition.data.Spitter)
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spitter/register],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.SpitterController.showRegistrationForm()
+九月 02, 2016 10:48:53 下午 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+信息: Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@10cd5c1d
+九月 02, 2016 10:48:53 下午 org.springframework.mock.web.MockServletContext log
+信息: Initializing Spring FrameworkServlet ''
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization started
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization completed in 0 ms
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.403 sec <<< FAILURE!
+shouldProcessRegistrationForm(pland.com.springaction4thedition.web.SpitterControllerTest)  Time elapsed: 0.182 sec  <<< FAILURE!
+Argument(s) are different! Wanted:
+spitterRepository.save(
+    pland.com.springaction4thedition.data.Spitter@747eea52
+);
+-> at pland.com.springaction4thedition.web.SpitterControllerTest.shouldProcessRegistrationForm(SpitterControllerTest.java:54)
+Actual invocation has different arguments:
+spitterRepository.save(
+    pland.com.springaction4thedition.data.Spitter@3849e93e
+);
+-> at pland.com.springaction4thedition.web.SpitterController.processRegistrationForm(SpitterController.java:36)
+
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+        at pland.com.springaction4thedition.web.SpitterControllerTest.shouldProcessRegistrationForm(SpitterControllerTest.java:54)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+        at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+        at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+        at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+        at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+        at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+        at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+        at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+        at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+        at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+        at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+        at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+        at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:606)
+        at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+        at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+        at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+        at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+        at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+Running pland.com.springaction4thedition.web.SpittleControllerTest
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spittles],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.SpittleController.spittles(org.springframework.ui.Model)
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spittles/{spittleId}],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.SpittleController.showSpittle(long,org.springframework.ui.Model)
+九月 02, 2016 10:48:53 下午 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+信息: Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@18509e9f
+九月 02, 2016 10:48:53 下午 org.springframework.mock.web.MockServletContext log
+信息: Initializing Spring FrameworkServlet ''
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization started
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization completed in 0 ms
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spittles],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.SpittleController.spittles(org.springframework.ui.Model)
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.setup.StandaloneMockMvcBuilder$StaticRequestMappingHandlerMapping register
+信息: Mapped "{[/spittles/{spittleId}],methods=[GET]}" onto public java.lang.String pland.com.springaction4thedition.web.SpittleController.showSpittle(long,org.springframework.ui.Model)
+九月 02, 2016 10:48:53 下午 org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter initControllerAdviceCache
+信息: Looking for @ControllerAdvice: org.springframework.test.web.servlet.setup.StubWebApplicationContext@5132ceb
+九月 02, 2016 10:48:53 下午 org.springframework.mock.web.MockServletContext log
+信息: Initializing Spring FrameworkServlet ''
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization started
+九月 02, 2016 10:48:53 下午 org.springframework.test.web.servlet.TestDispatcherServlet initServletBean
+信息: FrameworkServlet '': initialization completed in 0 ms
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 sec
+
+Results :
+
+Failed tests:   shouldProcessRegistrationForm(pland.com.springaction4thedition.web.SpitterControllerTest): (..)
+
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.149 s
+[INFO] Finished at: 2016-09-02T22:48:53-04:00
+[INFO] Final Memory: 19M/180M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test) on project spittr: There are test failures.
+[ERROR]
+[ERROR] Please refer to C:\_SoftwareDev\eclipse_projects\springaction4thedition\target\surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+
+C:\_SoftwareDev\eclipse_projects\springaction4thedition>
+

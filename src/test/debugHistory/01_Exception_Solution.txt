@@ -1,0 +1,11 @@
+This exception happens when I deal with exercise Listing 5.16. Testing 
+form-handling controller methods in Spring In Action 4th Edtion.
+
+The way to fix it is to add constructor with non-arguments for Spitter class.
+My guess is the params passed from 
+SpitterControllerTest.shouldProcessRegistrationForm() failed to initiate a 
+Spitter instance if there is no Constructor without parament
+
+	public Spitter(){
+		super();
+	}

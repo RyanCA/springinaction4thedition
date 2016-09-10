@@ -1,0 +1,146 @@
+04-Sep-2016 18:21:56.121 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.3
+04-Sep-2016 18:21:56.154 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\docs
+04-Sep-2016 18:21:56.788 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\examples
+04-Sep-2016 18:21:58.666 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\host-manager
+04-Sep-2016 18:21:58.725 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\J10_CarRental
+04-Sep-2016 18:22:07.562 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\manager
+04-Sep-2016 18:22:07.664 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\ROOT
+04-Sep-2016 18:22:07.710 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+04-Sep-2016 18:22:07.718 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+04-Sep-2016 18:22:07.719 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 11648 ms
+04-Sep-2016 18:22:28.219 INFO [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.startup.HostConfig.undeploy Undeploying context [/J10_CarRental]
+04-Sep-2016 18:22:28.263 SEVERE [ContainerBackgroundProcessor[StandardEngine[Catalina]]] org.apache.catalina.loader.WebappClassLoader.clearReferencesJdbc The web application [/J10_CarRental] registered the JDBC driver [org.postgresql.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+04-Sep-2016 18:23:01.677 INFO [main] org.apache.catalina.core.AprLifecycleListener.init Loaded APR based Apache Tomcat Native library 1.1.29 using APR version 1.4.8.
+04-Sep-2016 18:23:01.679 INFO [main] org.apache.catalina.core.AprLifecycleListener.init APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+04-Sep-2016 18:23:02.471 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized (OpenSSL 1.0.1e 11 Feb 2013)
+04-Sep-2016 18:23:02.620 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-apr-8080"]
+04-Sep-2016 18:23:02.636 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-apr-8009"]
+04-Sep-2016 18:23:02.638 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1403 ms
+04-Sep-2016 18:23:02.673 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service Catalina
+04-Sep-2016 18:23:02.674 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.0.3
+04-Sep-2016 18:23:02.691 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\docs
+04-Sep-2016 18:23:03.254 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\examples
+04-Sep-2016 18:23:04.013 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\host-manager
+04-Sep-2016 18:23:04.060 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\manager
+04-Sep-2016 18:23:04.103 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\ROOT
+04-Sep-2016 18:23:04.149 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-apr-8080"]
+04-Sep-2016 18:23:04.156 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-apr-8009"]
+04-Sep-2016 18:23:04.157 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1518 ms
+04-Sep-2016 18:33:54.910 INFO [localhost-startStop-2] org.apache.catalina.startup.HostConfig.deployWAR Deploying web application archive C:\_SoftwareDev\apache-tomcat-8.0.3\webapps\spittr-0.0.1-SNAPSHOT.war
+04-Sep-2016 18:33:58.113 INFO [localhost-startStop-2] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization started
+04-Sep-2016 18:33:58.474 INFO [localhost-startStop-2] org.springframework.web.context.support.AnnotationConfigWebApplicationContext.prepareRefresh Refreshing Root WebApplicationContext: startup date [Sun Sep 04 18:33:58 EDT 2016]; root of context hierarchy
+04-Sep-2016 18:33:58.605 INFO [localhost-startStop-2] org.springframework.web.context.support.AnnotationConfigWebApplicationContext.loadBeanDefinitions Registering annotated classes: [class pland.com.springaction4thedition.config.RootConfig]
+04-Sep-2016 18:33:59.512 INFO [localhost-startStop-2] org.springframework.web.context.ContextLoader.initWebApplicationContext Root WebApplicationContext: initialization completed in 1399 ms
+04-Sep-2016 18:33:59.521 INFO [localhost-startStop-2] org.springframework.web.servlet.DispatcherServlet.initServletBean FrameworkServlet 'dispatcher': initialization started
+04-Sep-2016 18:33:59.530 INFO [localhost-startStop-2] org.springframework.web.context.support.AnnotationConfigWebApplicationContext.prepareRefresh Refreshing WebApplicationContext for namespace 'dispatcher-servlet': startup date [Sun Sep 04 18:33:59 EDT 2016]; parent: Root WebApplicationContext
+04-Sep-2016 18:33:59.535 INFO [localhost-startStop-2] org.springframework.web.context.support.AnnotationConfigWebApplicationContext.loadBeanDefinitions Registering annotated classes: [class pland.com.springaction4thedition.config.WebConfig]
+04-Sep-2016 18:34:00.257 WARNING [localhost-startStop-2] org.springframework.web.context.support.AnnotationConfigWebApplicationContext.refresh Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcUriComponentsContributor' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.method.support.CompositeUriComponentsContributor]: Factory method 'mvcUriComponentsContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcValidator' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/slf4j/impl/StaticLoggerBinder
+04-Sep-2016 18:34:00.259 SEVERE [localhost-startStop-2] org.springframework.web.servlet.DispatcherServlet.initServletBean Context initialization failed
+ org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcUriComponentsContributor' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.method.support.CompositeUriComponentsContributor]: Factory method 'mvcUriComponentsContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcValidator' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/slf4j/impl/StaticLoggerBinder
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:776)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:861)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:541)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:668)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:540)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:494)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:136)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:158)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1236)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1044)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:4910)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5192)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:726)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:702)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:697)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:976)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:1762)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:744)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.method.support.CompositeUriComponentsContributor]: Factory method 'mvcUriComponentsContributor' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcValidator' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/slf4j/impl/StaticLoggerBinder
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 31 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerAdapter' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcValidator' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/slf4j/impl/StaticLoggerBinder
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:599)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1123)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1018)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:381)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$affce7b2.requestMappingHandlerAdapter(<generated>)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.mvcUriComponentsContributor(WebMvcConfigurationSupport.java:785)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$affce7b2.CGLIB$mvcUriComponentsContributor$38(<generated>)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$affce7b2$$FastClassBySpringCGLIB$$ca29e44c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$affce7b2.mvcUriComponentsContributor(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 32 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter]: Factory method 'requestMappingHandlerAdapter' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcValidator' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/slf4j/impl/StaticLoggerBinder
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:189)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:588)
+	... 53 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mvcValidator' defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration: Invocation of init method failed; nested exception is java.lang.NoClassDefFoundError: org/slf4j/impl/StaticLoggerBinder
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:381)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$affce7b2.mvcValidator(<generated>)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.getConfigurableWebBindingInitializer(WebMvcConfigurationSupport.java:529)
+	at org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport.requestMappingHandlerAdapter(WebMvcConfigurationSupport.java:485)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$affce7b2.CGLIB$requestMappingHandlerAdapter$39(<generated>)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$affce7b2$$FastClassBySpringCGLIB$$ca29e44c.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:356)
+	at org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration$$EnhancerBySpringCGLIB$$affce7b2.requestMappingHandlerAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:162)
+	... 54 more
+Caused by: java.lang.NoClassDefFoundError: org/slf4j/impl/StaticLoggerBinder
+	at org.slf4j.LoggerFactory.getSingleton(LoggerFactory.java:189)
+	at org.slf4j.LoggerFactory.bind(LoggerFactory.java:112)
+	at org.slf4j.LoggerFactory.performInitialization(LoggerFactory.java:105)
+	at org.slf4j.LoggerFactory.getILoggerFactory(LoggerFactory.java:235)
+	at org.slf4j.LoggerFactory.getLogger(LoggerFactory.java:208)
+	at org.hibernate.validator.util.LoggerFactory.make(LoggerFactory.java:29)
+	at org.hibernate.validator.util.Version.<clinit>(Version.java:30)
+	at org.hibernate.validator.engine.ConfigurationImpl.<clinit>(ConfigurationImpl.java:52)
+	at org.hibernate.validator.HibernateValidator.createGenericConfiguration(HibernateValidator.java:43)
+	at javax.validation.Validation$GenericBootstrapImpl.configure(Validation.java:269)
+	at org.springframework.validation.beanvalidation.LocalValidatorFactoryBean.afterPropertiesSet(LocalValidatorFactoryBean.java:248)
+	at org.springframework.validation.beanvalidation.OptionalValidatorFactoryBean.afterPropertiesSet(OptionalValidatorFactoryBean.java:40)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1637)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1574)
+	... 74 more
+Caused by: java.lang.ClassNotFoundException: org.slf4j.impl.StaticLoggerBinder
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1284)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1132)
+	... 88 more
