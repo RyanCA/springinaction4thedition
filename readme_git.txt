@@ -48,7 +48,7 @@ mvn clean
 
 1.8 #add it to git hub
 cd C:\_SoftwareDev\eclipse_projects
-git init springinaction4thedition
+git init springinaction4thedition #.git directory created
 cd .\springinaction4thedition
 git add .
 git status
@@ -57,8 +57,8 @@ git commit -m "Initialization commit batch"
 #If there is no repository on Github for your source, then you need do the following step
 #1.8.1 create a repo on github through github web UI
 #1.8.2 copy the url of new repo and use command below to associate local source to it
-#git remote add origin https://github.com/RyanCA/springinaction4thedition.git
-#git remote -v 
+git remote add origin https://github.com/RyanCA/springinaction4thedition.git
+git remote -v 
 #following is the result of above git remote command
 origin  https://github.com/RyanCA/springinaction4thedition.git (fetch)
 origin  https://github.com/RyanCA/springinaction4thedition.git (push)
