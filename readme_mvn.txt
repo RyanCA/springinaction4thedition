@@ -1,12 +1,14 @@
 ###This project is refered to the book of "Spring in Action, 4th Edition: Covers Spring 4" By Craig Walls###
 #######################You can get the digital book from Toronto Library####################################
+               
+               
 
 1. create pom.xml OR "you can use mvn command to create a mvn project"
    eg: 
    mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
-2. Dependency is referred to Spring In Action 4th Edition By Craig Walls
-   and int the Section of 1.3.1 Spring Module
+2. Dependency is referred to "Spring In Action 4th Edition" By Craig Walls
+   and in the Section of 1.3.1 Spring Module
                             
 3. $> mvn clean package 
       (After runnig above command, maven dependency will appear in eclipse, and war or jar file will be built;
@@ -17,7 +19,11 @@
       mvn tomcat7:undeploy
       mvn tomcat7:run
       mvn tomcat7:shutdown
+      
+      ######MVN Dependency Analysis
       mvn dependency::tree      #It can be used to see dependency information of all the jars
+      mvn dependency:analyze
+      mvn dependency:analyze-dep-mgt
 
       
       
@@ -56,10 +62,15 @@
       namespace must be existed online???
       such as <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="t" %>
       
+      
+      AOP Based Exception Control - @ControllerAdviser at class level and @ExceptionHandler(*.class) at method level
+      Redirect and carring data across redirect
+      Security - Web Security based on Filter
+      
+      
+      ############################################
       Thymelef not implement in this project???
-      
-      
-      
-      
+      Carrying data across redirect requests??? (Need to know more)
+      Chatper 8 Web Flow is not implemented???
        
        

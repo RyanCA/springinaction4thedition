@@ -60,7 +60,7 @@ public class SpittleController {
 			Model model){
 		
 		/**
-		 * Exception Handling Option 1:
+		 * Exception Handling Option 1: 
 		 * Added to test out mapping SpittleNotFoundException to request status code. Check SpittleNotFoundException class as well
 		 */
 		if(spittleId==12345){
@@ -77,13 +77,30 @@ public class SpittleController {
 	
 	/**
 	 * Exception Handling Option 2:
-	 * Whenever DuplicatedSpittleException is thrown, this method is invoked and returns a string (that is the view to be displayed. Config in tiles as well)
+	 * Whenever DuplicatedSpittleException is thrown in this class, this method is invoked 
+	 * and returns a string (that is the view to be displayed. Config this string in tiles as well)
+	 * 
 	 * It will handle all DuplicateSpittleException across all methods in SpittleController.java
+	 * 
+	 * This method is comment because of using AOP to control exception. Check with AppWideExceptionHandler.java
 	 */
-	@ExceptionHandler(DuplicateSpittleException.class)
-	public String handleDuplicateSpittle() {
-	  return "error/duplicate";
-	}
+//	@ExceptionHandler(DuplicateSpittleException.class)
+//	public String handleDuplicateSpittle() {
+//	  return "error/duplicate";//String should be configed in tiles.xml if use tile as view
+//	}
+	
+	/**
+	 * Exception Handling Option 3:
+	 * You can put Option2 method in one class, and let all controller class to extend it
+	 * Hence all controllers will be protected by handling this Exception
+	 * 
+	 * Exception Handling Option 4:
+	 * Better Solution than Option 3 is
+	 * Create a Excepton Handler class, annotated with @ControllerAdvice and put
+	 * Exception handle method there. This way, all controllers can catch this exception.
+	 * This is application for AOP
+	 * Refer to 7.4
+	 */
 	
 	
 	

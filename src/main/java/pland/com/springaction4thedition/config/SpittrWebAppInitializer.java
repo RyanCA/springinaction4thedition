@@ -8,14 +8,22 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration.Dynamic;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 
 /**
- * This is the first config class.
+ * This is the 1st config class for Spring MVC. 
+ * 
+ * It is a subclass of WebApplicationInitializer.class 
+ * and its class instance will be instantiated by Spring automatically
+ * 
  * Followings are RootConfig and WebConfig
+ * 
  *
  */
+
+//@Order(1)
 public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 
 	@Override
@@ -24,8 +32,22 @@ public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherS
 	}
 	
 	/**
-	 * Load applicaiton context created by ContextLoaderListener
+	 * Load application context created by ContextLoaderListener
 	 * The beans here are typically middle-tier and data-tier components 
+	 * 
+	 * The effect of this method is equivalent to below configurations in web.xml
+	 * 
+		<listener>
+		  <listener-class>
+		    org.springframework.web.context.ContextLoaderListener
+		  </listener-class>
+		</listener>
+		
+		<!-- Load all Spring XML configuration including our security.xml file -->
+		<context-param>
+		  <param-name>contextConfigLocation</param-name>
+		  <param-value>/WEB-INF/spring/*.xml</param-value>
+		</context-param>
 	 */
 	@Override
 	protected Class<?>[] getRootConfigClasses() {

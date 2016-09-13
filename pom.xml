@@ -134,7 +134,7 @@
 		    <version>3.4</version>
 		</dependency>
 		
-		<!-- Form Validation -->
+		<!-- For Web Form Validation -->
 		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-validator</artifactId>
@@ -149,6 +149,31 @@
 		    <artifactId>tiles-extras</artifactId>
 		    <version>3.0.5</version>
 		</dependency>
+		
+		<!-- For Spring Config -->
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-config</artifactId>
+		    <version>4.1.3.RELEASE</version>
+		</dependency>
+		
+		<!-- For spring-security-web -->
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-web</artifactId>
+		    <version>4.1.3.RELEASE</version>
+		</dependency>
+		
+		<!-- spring-security-taglibs for conditional rendering-->
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-taglibs</artifactId>
+		    <version>4.1.3.RELEASE</version>
+		</dependency>
+		
+
+		
+		
 
 
   </dependencies>
