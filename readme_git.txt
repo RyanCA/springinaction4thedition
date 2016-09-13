@@ -82,3 +82,9 @@ git remote rm name
 git branch xxx
 git checkout xxx
 
+#Branch related
+git checkout -b heroku_local
+git status
+git add ...
+git put origin heroku_local
+
