@@ -59,12 +59,12 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         .and()
            .authorizeRequests()
            .antMatchers("/spitter/**").authenticated()
-           .antMatchers("/spitter/**").hasRole("ADMIN");
+           .antMatchers("/spitter/**").hasRole("ADMIN")
         
         //Need HTTPS to transfer text
         //If you need to put it into Heroku, then you may need to turn off SSL
-//        .and()
-//           .requiresChannel().antMatchers(HttpMethod.POST,"/spitter/register").requiresSecure();
+        .and()
+           .requiresChannel().antMatchers(HttpMethod.POST,"/spitter/register").requiresSecure();
     
         /**
          * Refer to 9.3.3

@@ -1,5 +1,6 @@
 
-######You can refer to more details on tomcat 8 server by linking to http://localhost:8080/docs/ssl-howto.html######
+######You can refer to more details on tomcat 8 server by linking to###########
+http://localhost:8080/docs/ssl-howto.html
 
 ############Self-Signed Certificate############
 1. Java command generate local self-signed certificate (with password changeit)

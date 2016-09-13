@@ -1,31 +1,51 @@
-###This project is refered to the book of "Spring in Action, 4th Edition: Covers Spring 4" By Craig Walls###
-#######################You can get the digital book from Toronto Library####################################
+################################################################################
+This is referred to the book of "Spring in Action, 4th Edition" by Craig Walls
+You can get the digital book from Toronto Library
+###############################################################################
                
                
+##################Create MVN Project from Scratch For this Project##############
 
-1. create pom.xml OR "you can use mvn command to create a mvn project"
-   eg: 
-   mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+1. Use MAVEN command to create a Maven Project
+   mvn archetype:generate -DgroupId=com.pland -DartifactId=springinaction4thedition -DarchetypeArtifactId=maven-archetype-webapp -DinteractiveMode=false
+   
+2. Convert maven web project to eclipse web project
+   cd springinaction4thedition
+   mvn eclipse:eclipse -Dwtpversion=2.0   #######-Dwtpversion=2.0 it tells Maven to convert the project into an Eclipse web project (WAR), not the default Java project (JAR)
 
-2. Dependency is referred to "Spring In Action 4th Edition" By Craig Walls
+3. Dependency is referred to "Spring In Action 4th Edition" By Craig Walls
    and in the Section of 1.3.1 Spring Module
                             
 3. $> mvn clean package 
-      (After runnig above command, maven dependency will appear in eclipse, and war or jar file will be built;
-       test case also get executed)
-      
-      mvn test
-      mvn tomcat7:deploy
-      mvn tomcat7:undeploy
-      mvn tomcat7:run
-      mvn tomcat7:shutdown
-      
-      ######MVN Dependency Analysis
-      mvn dependency::tree      #It can be used to see dependency information of all the jars
-      mvn dependency:analyze
-      mvn dependency:analyze-dep-mgt
+      (After running above command, maven dependency will appear in eclipse under the directory of Maven Dependecies, and war or jar file will be built; test cases also get executed)
 
-      
+4. Start Tomcat 8 Manually and put the war under its apps directory
+
+5. Access the website
+   http://localhost:8080/spittr-0.0.1-SNAPSHOT
+   
+###############################################################################
+
+
+##################### MVN mostly used commands for a web project ###############
+
+mvn clean package
+
+############ MVN Dependency Analysis ############
+mvn dependency::tree
+mvn dependency:analyze
+mvn dependency:analyze-dep-mgt
+
+######Below commands don't run correctly due to plugins config in pom.xml######
+mvn tomcat7:deploy
+mvn tomcat7:undeploy
+mvn tomcat7:run
+mvn tomcat7:shutdown
+     
+################################################################################
+
+
+#################### Need more research on development#########################    
       
       MVN Tomcat Plugin only support tomcat 7, and Tomcat 7 only support servlet 3.0, detail as below:
       http://tomcat.apache.org/whichversion.html
@@ -72,5 +92,4 @@
       Thymelef not implement in this project???
       Carrying data across redirect requests??? (Need to know more)
       Chatper 8 Web Flow is not implemented???
-       
-       
+###############################################################################
