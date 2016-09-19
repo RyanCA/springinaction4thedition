@@ -1,8 +1,8 @@
 ################################################################################
 This is referred to the book of "Spring in Action, 4th Edition" by Craig Walls
-You can get the digital book from Toronto Library
-###############################################################################
-               
+1. You can get the digital book from Toronto Library
+2. Source code of the book is located at src\test\bookSourceCode\SpringiA4_SourceCode.zip 
+###############################################################################              
                
 ##################Create MVN Project from Scratch For this Project##############
 
@@ -44,6 +44,10 @@ mvn tomcat7:shutdown
      
 ################################################################################
 
+#################Spring Web Initialization Process##############################
+
+
+
 
 #################### Need more research on development#########################    
       
@@ -82,14 +86,22 @@ mvn tomcat7:shutdown
       namespace must be existed online???
       such as <%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="t" %>
       
+      Hibernate session is thread safe?
+      JPA EntityManager is thread safe?
+      
       
       AOP Based Exception Control - @ControllerAdviser at class level and @ExceptionHandler(*.class) at method level
       Redirect and carring data across redirect
       Security - Web Security based on Filter
       
       
-      ############################################
-      Thymelef not implement in this project???
-      Carrying data across redirect requests??? (Need to know more)
-      Chatper 8 Web Flow is not implemented???
+      Write your own annotation
+      
+
+      
+      
+      ############ Not Done Yet in this book ################################
+      Thymelef not implement in this project(chapter 6.4)???
+      Carrying data across redirect requests(Chapter 7.5)??? (Need to know more)
+      Web Flow is not implemented(Chatper 8)???
 ###############################################################################

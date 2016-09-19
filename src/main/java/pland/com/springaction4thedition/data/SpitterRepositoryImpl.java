@@ -2,11 +2,12 @@ package pland.com.springaction4thedition.data;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component("spitterRepositoryImpl")
 public class SpitterRepositoryImpl implements SpitterRepository {
 	
 	public Spitter save(Spitter spitter){
-	   return spitter;
+		System.out.println("This is in SpitterRepositoryImpl");
+	    return spitter;
 	}
 	
 	public Spitter findByUsername(String username){

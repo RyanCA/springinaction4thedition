@@ -1,6 +1,7 @@
 ################################################################################
 This is referred to the book of "Spring in Action, 4th Edition" by Craig Walls
-You can get the digital book from Toronto Library
+1. You can get the digital book from Toronto Library
+2. Source code of the book is located at src\test\bookSourceCode\SpringiA4_SourceCode.zip 
 ###############################################################################
 
 ################ Source Code Change Before Moving to Heroku Platform ###########

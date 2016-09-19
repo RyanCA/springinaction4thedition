@@ -1,0 +1,47 @@
+Spring automatically scans and identifies all these classes that are annotated with 
+"@Component, @Service, @Repository, @Controller" and registers BeanDefinition with 
+ApplicationContext;
+
+With respect to scan-auto-detection, dependency injection for BeanDefinition 
+@Component, @Service, @Repository, @Controller are same;
+
+We will have different layers like presentation, service, business, data access etc. 
+When a class is to be annotated for auto-detection by Spring, then we should use 
+the respective stereotype as below:
+@Component – generic and can be used across application.
+@Service – annotate classes at service layer level.
+@Controller – annotate classes at presentation layers level, mainly used in Spring MVC.
+@Repository – annotate classes at persistence layer, which will act as database repository.
+
+If technically they are going to be same then why do we need to use these at different 
+layers level. Why not use the same at all layers. For example, if we use @Service in all 
+layers, all the beans will get instantiated and no issues. There is a minor difference, 
+for example consider @Repository.The postprocessor automatically looks for all exception 
+translators (implementations of the PersistenceExceptionTranslator interface) and advises 
+all beans marked with the @Repository annotation so that the discovered translators can 
+intercept and apply the appropriate translation on the thrown exceptions.
+
+################################################################################
+Similarly, I used @ControllerAdvice in AppWideExceptionHandler.java to assist 
+all classes annotated with @Controller
+
+@Component is for auto-scan;
+@Service, @Repository and @Controller are all specification of @Component;
+So is @Configuration;
+Neither is @Bean;
+################################################################################
+
+################################################################################
+@Component (and @Service and @Repository) are used to auto-detect and 
+auto-configure beans using classpath scanning. There's an implicit one-to-one 
+mapping between the annotated class and the bean (i.e. one bean per class). 
+Control of wiring is quite limited with this approach, since it's purely 
+declarative.
+
+@Bean is used to explicitly declare a single bean, rather than letting Spring 
+do it automatically as above. It decouples the declaration of the bean from the 
+class definition, and lets you create and configure beans exactly how you 
+choose.
+################################################################################
+Please refer to:
+http://javapapers.com/spring/spring-component-service-repository-controller-difference/

@@ -3,10 +3,13 @@ package pland.com.springaction4thedition.web;
 import java.io.File;
 import java.io.IOException;
 
+import javax.annotation.Resource;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,9 +32,17 @@ import pland.com.springaction4thedition.data.SpitterRepository;
 @RequestMapping("/spitter")
 public class SpitterController {
 	
+	/**
+	 * If the annotation's value doesn't indicate a bean name, an appropriate 
+	 * name will be built based on the short name of the class 
+	 * (with the first letter lower-cased)
+	 */
+	
+	@Autowired //(if use @Autowired + @Qualifier to specify the bean name, but it also doesn't work because Qualifier is not allowed for constructor. It works for field
+//	@Resource(name="jdbcSpitterRepository")//@Source can be used for field but not constructor according to JSR 330
 	private SpitterRepository spitterRepository;
 	
-	@Autowired
+
 	public SpitterController(SpitterRepository spitterRepository){
 		this.spitterRepository = spitterRepository;
 	}
@@ -52,11 +63,10 @@ public class SpitterController {
 		 * this block should be executed first if want to verify the forms from client
 		 */
 		if(errors.hasErrors()){
-			return "registerForm";
+			return "registerForm"; 
 		}
 		
 		spitterRepository.save(spitter);
-		
 		
 		try{
 			File[] roots = File.listRoots();
