@@ -4,11 +4,77 @@ This is referred to the book of "Spring in Action, 4th Edition" by Craig Walls
 2. Source code of the book is located at src\test\bookSourceCode\SpringiA4_SourceCode.zip 
 ###############################################################################
 
-################ Source Code Change Before Moving to Heroku Platform ###########
-1. Added Procfile under the root folder
-2. Change the pox.xml using the jetty plugin
 
-################################################################################
+###############################################################################
+#                                                                             #
+#                  Java Web Deployed on Heroku Tomcat                         #
+#                                                                             #
+###############################################################################
+
+###### 1. Refercen link ######
+https://devcenter.heroku.com/articles/java-webapp-runner#prerequisites
+
+###### 2. Heroku Local Preparatio n######
+1. Add tomcat plugin in pom.xml (Reference the pom.xml)
+2. $> mvn clean package
+3. $> java -jar target/dependency/webapp-runner.jar target/springaction.war
+4. http://localhost:8080                 # Note the url without appending /bootstrap in the end
+5. $> git add                            # Add any files you added or updated
+6. $> git commit -m "xxxxx"   
+7. $> git push origin master
+
+####### 3. Starting Heroku Related Process ######
+8. $> heroku create springaction             # Please provide name otherwise will be random name
+                                             
+Creating springaction... done
+https://springaction.herokuapp.com/ | https://git.heroku.com/springaction.git
+
+9. $> git remote -v                      # Code base is created in Heroku now
+heroku  https://git.heroku.com/springaction.git (fetch)
+heroku  https://git.heroku.com/springaction.git (push)
+origin  https://github.com/RyanCA/springinaction4thedition.git (fetch)
+origin  https://github.com/RyanCA/springinaction4thedition.git (push)
+ 
+10. $> git push heroku master            # Push source to heroku and deploy it    
+        
+####### Reference of result ######
+Counting objects: 178, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (153/153), done.
+Writing objects: 100% (178/178), 1.77 MiB | 603.00 KiB/s, done.
+Total 178 (delta 51), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote:
+remote: -----> Java app detected
+remote: -----> Installing OpenJDK 1.8...
+......
+......
+......
+remot          [INFO] Installing /tmp/build_62eac7386be498174df30d0e70746906/pom.xml to /app/tmp/cache/.m2/repository/pland/com/spittr/0.0.1-SNAPSHOT/spittr-0.0.1-SNAPSHOT.pom
+remote:        [INFO] ------------------------------------------------------------------------
+remote:        [INFO] BUILD SUCCESS
+remote:        [INFO] ------------------------------------------------------------------------
+remote:        [INFO] Total time: 18.068 s
+remote:        [INFO] Finished at: 2016-09-23T02:29:11+00:00
+remote:        [INFO] Final Memory: 28M/189M
+remote:        [INFO] ------------------------------------------------------------------------
+remote: -----> Discovering process types
+remote:        Procfile declares types -> (none)
+remote:
+remote: -----> Compressing...
+remote:        Done: 104.1M
+remote: -----> Launching...
+remote:        Released v3
+remote:        https://springaction.herokuapp.com/ deployed to Heroku
+remote:
+remote: Verifying deploy... done.
+To https://git.heroku.com/springaction.git
+ * [new branch]      master -> master
+
+11. $> >heroku open                      #It will launch browser along with url
+heroku-cli: Installing CLI... 18.18MB/18.18MB 
+   
 
 ########################## Heroku Manual ######################################
 https://devcenter.heroku.com/articles/getting-started-with-java#set-up
@@ -22,35 +88,33 @@ Install heroku Environment (install 03_heroku-toolbelt_HerokuOnly.exe)
 heroku login
     
 2. 
-git clone https://github.com/RyanCA/springinaction4thedition.git
+git clone https://github.com/RyanCA/bootstrap.git
 
 3.
-cd springinaction4thedition
+cd bootstrap
 
 4. create heroku project
-heroku create                            # heroku create with system random name
+$> heroku create                            # heroku create with system random name
 or
-heroku create springinaction4thedition   # heroku create app given name
+$> heroku create bootstrap                  # heroku create app given name
 
-########################## heroku result of above command ######################
-C:\...\eclipse_projects\springinaction4thedition\springinaction4thedtion_heroku\springinaction4thedition>heroku create springinaction4thedition
-Creating springinaction4thedition... done
-https://springinaction4thedition.herokuapp.com/ | https://git.heroku.com/springinaction4thedition.git
-
-C:\...\eclipse_projects\springinaction4thedition\springinaction4thedtion_heroku\springinaction4thedition>
-
-C:\...\eclipse_projects\springinaction4thedition\springinaction4thedtion_heroku\springinaction4thedition>git remote -v
-heroku  https://git.heroku.com/springinaction4thedition.git (fetch)
-heroku  https://git.heroku.com/springinaction4thedition.git (push)
-origin  https://github.com/RyanCA/springinaction4thedition.git (fetch)
-origin  https://github.com/RyanCA/springinaction4thedition.git (push)
-################################################################################
 
 5. If you want to remove this app
-heroku apps:destroy -app springinaction4thedition
+$> heroku apps:destroy -app secure-island-32273
+###### Reference of Result Begin #######
+ !    WARNING: This will delete secure-island-32273 including all
+ !    add-ons.
+ !    To proceed, type secure-island-32273 or re-run this
+ !    command with --confirm secure-island-32273
+
+secure-island-32273
+Destroying secure-island-32273 (including all add-ons)... done
+###### Reference of Result End #######
 
 6. display heroku apps
-heroku apps                             # heroku displays apps
+$> heroku apps                             # heroku displays apps
+carrental2015
+secure-island-32273
 
 7. use git push to put source code to heroku git and deploy app
 (This will stop running apps, so you don't need to use command of "heroku ps:scale web=0" to stop app before deploy)

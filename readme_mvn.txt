@@ -95,13 +95,31 @@ mvn tomcat7:shutdown
       Security - Web Security based on Filter
       
       
-      Write your own annotation
+      RPC includes:
+      RMI: Use RMI, java object must be serializied; 
+           Must use java (That means it's not language independent);
+           Server and Client must use same version of Java runtime to avoid weird issues;
+           May blocked by firewall;
+           
+      What is SOA?
+      SOA means many things to different people. But at the center of SOA is 
+      the idea that applications can and should be designed to lean on a common 
+      set of core services instead of reimplementing the same functionality for 
+      each application.
       
-
+      What you doing now?
+      Write your own annotation to implement Aspect programming!!!
+      OpenID
+      SingleSignOn
+      Heloku development
+      Datasource (App Server and Libs)
       
       
       ############ Not Done Yet in this book ################################
       Thymelef not implement in this project(chapter 6.4)???
       Carrying data across redirect requests(Chapter 7.5)??? (Need to know more)
       Web Flow is not implemented(Chatper 8)???
+      Spring Data Persistency not implement yet???
+      Spring Non SQL not implement yet
+      Spring Cache not implement yet 
 ###############################################################################

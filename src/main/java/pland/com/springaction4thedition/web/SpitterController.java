@@ -4,10 +4,12 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.annotation.Resource;
+import javax.annotation.security.RolesAllowed;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
@@ -53,7 +55,15 @@ public class SpitterController {
 		return "registerForm";
 	}
 	
+	
+	/**
+	 * The @Secured @RolesAllowed annotation is an additional security protection
+	 * behind Spring Web Security. In most of cases, it may not necessary to have 
+	 * two security together. More details refer to MethodSecurityConfig.java
+	 */
 	@RequestMapping(value="register", method=RequestMethod.POST)
+	@Secured({"ROLE_USER", "ROLE_ADMIN"})
+	@RolesAllowed({"ROLE_USER", "ROLE_ADMIN"})
 	public String processRegistrationForm(
 			@RequestPart("profilePicture") MultipartFile profilePicture, /* Config multipart request */
 			@Valid Spitter spitter, 

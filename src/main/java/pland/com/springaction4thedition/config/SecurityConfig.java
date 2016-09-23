@@ -14,7 +14,8 @@ import org.springframework.security.config.annotation.web.servlet.configuration.
  *  the need for XML security configuration
  *  
  * More Spring MVC specific features compared to EnableWebSecurity
- * Such as CSRF attack; Authentication
+ * Such as CSRF attack; receiving the authenticated user’s principal (or username) 
+ * via @AuthenticationPrincipal-annotated parameters
  * Refer to Spring MVC Listing 9.2 illustrate a bit on this
  *
  */
@@ -47,7 +48,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 	protected void configure(HttpSecurity http) throws Exception{
 		
 		//Use default Spring login page
-        http.formLogin()
+//        http.formLogin().loginPage("/login") //You can define you own login form and URL
+		
+        http.formLogin() //Use Spring Default Login Page
         
         .and()
             .logout()
@@ -59,10 +62,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         .and()
            .authorizeRequests()
            .antMatchers("/spitter/**").authenticated()
-           .antMatchers("/spitter/**").hasRole("ADMIN")
+           .antMatchers("/spitter/**").hasRole("ADMIN") //hasRole() method to have the ROLE_ prefix applied automatically
         
         //Need HTTPS to transfer text
         //If you need to put it into Heroku, then you may need to turn off SSL
+        .and().requiresChannel().antMatchers(HttpMethod.GET,"/spitter/register").requiresSecure()
         .and()
            .requiresChannel().antMatchers(HttpMethod.POST,"/spitter/register").requiresSecure();
     

@@ -24,7 +24,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * It will scan other Components, Configurations such as SecurityConfig.java
  */
 @Configuration
-@Import({SecurityConfig.class, JdbcConfig.class, HibernateConfig.class, SpringJPAHibernateConfig.class})
+@Import({SecurityConfig.class, JdbcConfig.class, HibernateConfig.class, SpringJPAHibernateConfig.class, MethodSecurityConfig.class})
 @ComponentScan(basePackages={"pland.com.springaction4thedition"},
     excludeFilters={
         @Filter(type=FilterType.ANNOTATION, value=EnableWebMvc.class)

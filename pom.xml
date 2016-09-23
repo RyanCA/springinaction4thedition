@@ -205,70 +205,51 @@
 		    <version>4.1.1.Final</version>
 		</dependency>
 		
-		
-		
+		<!-- In order to use @RolesAllowed annotation from Java Standard -->
+		<dependency>
+		    <groupId>javax.annotation</groupId>
+		    <artifactId>jsr250-api</artifactId>
+		    <version>1.0</version>
+		</dependency>
 		
 
-		
 		
 
 
   </dependencies>
   
   <build>
+  
+    <!-- Is this the one define as final war name YES (the name won't be like spittr.0.0.1-SNAPSHOT.war  -->
+    <finalName>springaction</finalName>
+        
     <plugins>
-    
-    <!-- For heroku deployment only -->
-    <plugin>
-	    <groupId>org.apache.maven.plugins</groupId>
-	    <artifactId>maven-dependency-plugin</artifactId>
-	    <version>2.3</version>
-	    <executions>
-	        <execution>
-	            <phase>package</phase>
-	            <goals><goal>copy</goal></goals>
-	            <configuration>
-	                <artifactItems>
-	                    <artifactItem>
-	                        <groupId>org.eclipse.jetty</groupId>
-	                        <artifactId>jetty-runner</artifactId>
-	                        <version>9.2.7.v20150116</version>
-	                        <destFileName>jetty-runner.jar</destFileName>
-	                    </artifactItem>
-	                </artifactItems>
-	            </configuration>
-	        </execution>
-	    </executions>
-	</plugin>
-	
-    <!-- use 2.3-SNAPSHOT failed, can't find that version -->
-<!-- 
-      <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-        <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.1</version>
-        <configuration>
-          <url>http://localhost:8080</url>
-          <path>/spittr</path>
-        </configuration>
-      </plugin>
-       -->
 
-<!-- to be deleted
-     <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-        <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.1</version>
-        <configuration>
-        <url>http://localhost:8080/manager/text</url>
-          <path>/spittr</path>
-          <server>deploymentRepo</server>
-	      <username>repouser</username>
-	      <password>repopwd</password>
-        </configuration>
-      </plugin>
-      -->
+       <!-- For heroku deployment only -->
+       <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>2.3</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals><goal>copy</goal></goals>
+                    <configuration>
+                        <artifactItems>
+                            <artifactItem>
+                                <groupId>com.github.jsimone</groupId>
+                                <artifactId>webapp-runner</artifactId>
+                                <version>8.0.30.2</version>
+                                <destFileName>webapp-runner.jar</destFileName>
+                            </artifactItem>
+                        </artifactItems>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+	
     </plugins>
+    
   </build>
 
 </project>
