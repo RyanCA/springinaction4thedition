@@ -80,6 +80,15 @@ To https://git.heroku.com/springaction.git
 11. $> >heroku open                      #It will launch browser along with url
 heroku-cli: Installing CLI... 18.18MB/18.18MB 
    
+###### 4 Heroku SSL Settings NOT Finished Yet ######
+https://devcenter.heroku.com/articles/ssl-endpoint#setting-up-ssl-on-heroku
+12. $> heroku addons:create ssl:springaction.herokuapp.com
+    $> heroku addons:create ssl:endpoint
+    $> heroku certs:add springinaction_keystore
+    $> heroku certs
+    $> heroku certs:info
+
+
 
 ########################## Heroku Manual ######################################
 https://devcenter.heroku.com/articles/getting-started-with-java#set-up

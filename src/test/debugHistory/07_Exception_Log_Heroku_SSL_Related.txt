@@ -1,0 +1,4 @@
+1. When I remove the SSL request for particular http request and deploy to heroku
+   The 403 Error appears when I signup a spitter
+Exception:
+   HTTP Status 403 - Invalid CSRF Token 'null' was found on the request parameter '_csrf' or header 'X-CSRF-TOKEN'.

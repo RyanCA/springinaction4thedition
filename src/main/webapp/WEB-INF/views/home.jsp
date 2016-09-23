@@ -16,8 +16,8 @@
 -->
     <h1><s:message code="spittr.welcome" /></h1>
     <!-- There are more spring tag related content in Chapter 6 -->
-    <a href="<s:url value="/spittles" />"> Spittles</a> |
-    <a href="<s:url value="/spitter/register" />">Register</a>
+    <a href="<s:url value="spittles" />"> Spittles</a> |
+    <a href="<s:url value="spitter/register" />">Register</a>
     
     
     <!-- Securing the view Conditional Rendering  -->
