@@ -62,13 +62,18 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
         .and()
            .authorizeRequests()
            .antMatchers("/spitter/**").authenticated()
-           .antMatchers("/spitter/**").hasRole("ADMIN") //hasRole() method to have the ROLE_ prefix applied automatically
+           .antMatchers("/spitter/**").hasRole("ADMIN"); //hasRole() method to have the ROLE_ prefix applied automatically
         
         //Need HTTPS to transfer text
-        //If you need to put it into Heroku, then you may need to turn off SSL
-        .and().requiresChannel().antMatchers(HttpMethod.GET,"/spitter/register").requiresSecure()
-        .and()
-           .requiresChannel().antMatchers(HttpMethod.POST,"/spitter/register").requiresSecure();
+        /**
+         * If you need to put it into Heroku, then you may need to turn off SSL 
+         * Because everything there is SSL already, No HTTP;
+         * So if here ask SSL for some of http reqeust, it causes problems on Heroku
+         * 
+         */
+//        .and().requiresChannel().antMatchers(HttpMethod.GET,"/spitter/register").requiresSecure()
+//        .and()
+//           .requiresChannel().antMatchers(HttpMethod.POST,"/spitter/register").requiresSecure();
     
         /**
          * Refer to 9.3.3
